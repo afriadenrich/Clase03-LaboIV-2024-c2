@@ -1,0 +1,26 @@
+<div id="mostrar-datos">
+  <h1>Mostrar Datos</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of usuariosInput; track $index) {
+      <tr>
+        <td>{{ $index }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.apellido }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+
+<!--
+
+<div *ngIf="nombre !== 'apellido'"></div>
+-->

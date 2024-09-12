@@ -1,0 +1,8 @@
+<div id="contenedor">
+  <p>contenedor works!</p>
+  <app-ingresar-datos
+    (eventoUsuario)="recibirUsuario($event)"
+  ></app-ingresar-datos>
+
+  <app-mostrar-datos [usuariosInput]="usuarios"></app-mostrar-datos>
+</div>
